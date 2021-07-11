@@ -52,3 +52,5 @@ const kTextFieldDecoration = InputDecoration(
     ),
   ),
 );
+
+const aplicationIdAndroid = 'com.fernandogonzalez.flash_chat';
