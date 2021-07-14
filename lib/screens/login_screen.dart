@@ -12,8 +12,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-
-  late final _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   String email = '';
   String password = '';
 
@@ -74,7 +73,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   try {
                     final user = await _auth.signInWithEmailAndPassword(
                       email: email,
-                      password: password,);
+                      password: password,
+                    );
                     if (user != null) {
                       Navigator.pushNamed(context, ChatScreen.id);
                     }

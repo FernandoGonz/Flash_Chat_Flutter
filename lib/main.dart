@@ -7,6 +7,7 @@ import 'package:firebase_core/firebase_core.dart';
 
 // repo https://github.com/FernandoGonz/Flash_Chat_Flutter.git
 // common errors with firebase x Flutter https://blog.londonappbrewery.com/troubleshooting-firebase-x-flutter-a974b2645689
+// documentation https://firebase.flutter.dev/docs/firestore/usage/
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();

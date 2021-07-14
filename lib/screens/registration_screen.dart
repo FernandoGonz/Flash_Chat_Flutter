@@ -13,8 +13,7 @@ class RegistrationScreen extends StatefulWidget {
 }
 
 class _RegistrationScreenState extends State<RegistrationScreen> {
-
-  late final _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   String email = '';
   String password = '';
 
@@ -82,7 +81,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     if (newUser != null) {
                       Navigator.pushNamed(context, ChatScreen.id);
                     }
-                  } catch(e) {
+                  } catch (e) {
                     print(e);
                   }
                 }
